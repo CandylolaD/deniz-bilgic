@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f0" media="(prefers-color-scheme: light)">
+    <title>Deniz Bilgic | Grafikdesigner | Mediengestalter Print & Digital | Berlin</title>
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/print.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Noise Overlay -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" aria-hidden="true"></div>
+
+    <!-- Hauptnavigation -->
+    <nav id="navbar" role="navigation" aria-label="Hauptnavigation">
+        <a href="index.html" class="logo hover-target" aria-label="Startseite – Deniz Bilgic">
+            <img src="/assets/images/logo/db_logo_blau.webp" alt="Deniz Bilgic Logo" class="logo-img" loading="lazy">
+        </a>
+
+        <ul class="nav-links" id="navLinks" role="menubar">
+            <li role="none"><a href="index.html#hero" class="hover-target" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" class="hover-target" role="menuitem">Über Mich</a></li>
+            <li role="none"><a href="index.html#portfolio" class="hover-target" role="menuitem">Portfolio</a></li>
+            <li role="none">
+                <button class="theme-switch hover-target" id="themeBtn" aria-label="Theme wechseln">
+                    Dark / Light
+                </button>
+            </li>
+        </ul>
+
+        <button class="hamburger hover-target" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top hover-target" aria-label="Nach oben scrollen">&#8593;</a>
+
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-title-print">
+        <canvas id="goldenCanvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title-print">
+                <span class="title-solid">PRINT</span>
+                <span class="title-outline">DESIGN</span>
+            </h1>
+            <hr class="hero-divider" aria-hidden="true">
+            <p class="hero-desc">LAYOUT, SATZ &amp; SIEG</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Bereiche -->
+    <main id="mainblob">
+             <div class="main-blobs" aria-hidden="true">
+                <div class="blob blob--1"></div>
+                <div class="blob blob--2"></div>
+                <div class="blob blob--3"></div>
+            </div>
+
+        <section id="intro" aria-labelledby="intro-print">
+           <q><span class="type"><span>Manche Ideen funktionieren erst, wenn sie die richtige Form bekommen.</span></span></q>
+             
+        <div class="section-intro reveal">
+      <p class="sec-desc">Diese Seite zeigt eine Auswahl meiner Arbeiten aus den Bereichen Magazinlayout, Plakatgestaltung, Coverdesign und Logodesign.
+<br>
+Von der ersten Konzeptskizze bis zur finalen Umsetzung entsteht so Gestaltung, die sowohl im Detail funktioniert als auch im Gesamtbild überzeugt.
+</p>
+            </div>
+            </section>
+
+        <!-- Magazin Section -->
+        <section id="magazin" aria-labelledby="title-magazin">
+            <div class="section-intro reveal">
+                <h2 class="sec-title" id="title-magazin">Editorial Design</h2>
+                <p class="sec-desc">Editorial Design beschäftigt sich mit der visuellen Gestaltung von Printmedien wie Magazinen, Zeitschriften oder Broschüren. Im Mittelpunkt stehen Layout, Lesbarkeit und ein klares Gestaltungsraster.
+Eine besondere Rolle spielt das Cover, denn es prägt den ersten Eindruck und muss sofort Aufmerksamkeit erzeugen. Gleichzeitig sollten Texte, Bilder und grafische Elemente harmonisch zusammenspielen, damit Inhalt und Gestaltung funktionieren.
+</p>
+            </div>
+            <div class="grid-container reveal delay-2" id="grid-magazin" role="list" aria-label="Magazin Projekte"></div>
+        </section>
+
+         <!-- Poster Section -->
+        <section id="poster" aria-labelledby="title-poster">
+            <div class="section-intro reveal">
+                <h2 class="sec-title" id="title-poster">PLAKATE & COVER</h2>
+                <p class="sec-desc">Eine Auswahl meiner Arbeiten aus den Bereichen Plakatgestaltung und Coverdesign.</p>
+            </div>
+            <div class="grid-container reveal delay-2" id="grid-poster" role="list" aria-label="Poster Projekte"></div>
+
+    
+        </section>
+
+        <!-- Logo Section -->
+        <section id="logos" aria-labelledby="title-logos">
+            <div class="section-intro reveal">
+                <h2 class="sec-title" id="title-logos">LOGOS</h2>
+                <p class="sec-desc">Identität auf den Punkt gebracht. Logos müssen in schwarz-weiß funktionieren und auf kleinstem Raum ihre Kraft entfalten.</p>
+            </div>
+            <div class="grid-container reveal delay-2" id="grid-logos" role="list" aria-label="Logo Projekte"></div>
+        </section>
+
+       
+
+        <section>
+            <!-- Unternavigation -->
+            <nav class="nav-grid" aria-label="Weitere Portfolio-Kategorien">
+                
+                <a href="index.html" class="sub-nav-btn reveal hover-target">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    <span>Home</span>
+                </a>
+                <a href="brand.html" class="sub-nav-btn reveal hover-target">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span>Brand</span>
+                </a>
+                <a href="about.html" class="sub-nav-btn reveal hover-target">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+                    <span>Über mich</span>
+                </a>
+                <a href="contact.html" class="sub-nav-btn reveal hover-target">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span>Kontakt</span>
+                </a>
+            </nav>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <figure class="footer-logo">
+                    <img src="/assets/images/logo/db_logo_blau.webp" alt="Deniz Bilgic Logo" loading="lazy">
+                </figure>
+               
+            </div>
+
+            <div class="footer-col">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="index.html#hero" class="hover-target">Startseite</a></li>
+                    <li><a href="about.html" class="hover-target">Über Mich</a></li>
+                    <li><a href="index.html#portfolio" class="hover-target">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p>Deniz Bilgic<br>
+                    Berlin<br>
+                    <a href="mailto:info@denizbilgic.de" class="hover-target" style="color: white;">info@denizbilgic.de</a>
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="impressum.html" class="hover-target">Impressum</a></li>
+                    <li><a href="datenschutz.html" class="hover-target">Datenschutz</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2025 Deniz Bilgic. Alle Rechte vorbehalten.</span>
+        </div>
+    </footer>
+
+    <!-- Projekt Modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+        <div class="modal-header">
+            <span class="modal-label">PROJEKT ÜBERSICHT</span>
+            <button class="close-btn hover-target" id="closeModalBtn" aria-label="Modal schließen">&#x2715; Close</button>
+        </div>
+
+        <div class="modal-content">
+            <div class="project-detail-grid">
+                <div class="modal-info">
+                    <h2 id="mTitle">Title</h2>
+                    <span class="modal-subtitle" id="mSubtitle"></span>
+                    <p class="modal-text" id="mDesc"></p>
+                    <span class="modal-subtitle" id="mContextLabel"></span>
+                    <p class="modal-text" id="mStory"></p>
+                </div>
+
+                <!-- Haupt Slider -->
+                <div class="main-slider-wrap">
+                    <div class="main-slide-container hover-target" id="mainSlideContainer" role="img" aria-label="Projektbild">
+                        <div id="mainSlideInjector"></div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="ctrl-btn hover-target" id="prevBtn" aria-label="Vorheriges Bild">PREV</button>
+                        <span id="slideCounter" style="color:var(--accent-color5)" aria-live="polite">1 / 4</span>
+                        <button class="ctrl-btn hover-target" id="nextBtn" aria-label="Nächstes Bild">NEXT</button>
+                    </div>
+                    <small style="display:block; margin-top:5px; text-transform:uppercase; font-size:0.9rem; color:var(--accent-color5);">Click Image to Zoom</small>
+                </div>
+            </div>
+
+            <!-- Laufende Strip Gallery -->
+            <div class="strip-gallery-container">
+                <span class="strip-label">Project Overview (Interactive)</span>
+                <div class="marquee-wrapper" id="stripMarquee" role="list" aria-label="Projektbilder Übersicht"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zoom Overlay -->
+    <div class="zoom-overlay" id="zoomOverlay" role="dialog" aria-modal="true" aria-label="Bild vergrößert">
+        <button class="zoom-close-hint" id="closeZoomBtn" aria-label="Zoom schließen">&#x2715;</button>
+        <img id="zoomImg" src="" alt="Vergrößerte Ansicht des Projektbildes">
+    </div>
+     <script src="/js/print.js"></script>
+    <script src="/js/shared.js"></script>
+    
+</body>
+</html>
