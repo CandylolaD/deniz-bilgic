@@ -254,7 +254,7 @@ section { padding: 120px 5%; }
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 28px 0;
+    margin: 68px 0;
 }
 
 .tag {
@@ -279,10 +279,11 @@ section { padding: 120px 5%; }
 .about-cta {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
     margin-top: 8px;
-    padding: 14px 28px;
-    border: 1.5px solid var(--text-color);
+    padding: 10px 20px;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 30px;
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
     font-size: 0.85rem;

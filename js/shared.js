@@ -61,13 +61,18 @@
     }
 
     /* Theme Toggle */
-    var themeBtn      = document.getElementById('themeBtn');
+    var themeBtn       = document.getElementById('themeBtn');
     var themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
-    function updateThemeColor(theme) {
+    function updateThemeColor() {
         if (themeColorMeta) {
             themeColorMeta.setAttribute('content', '#1e6bff');
         }
+    }
+
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.setAttribute('data-theme', savedTheme);
     }
 
     if (themeBtn) {
@@ -75,11 +80,12 @@
             var current = document.body.getAttribute('data-theme');
             var next    = current === 'dark' ? 'light' : 'dark';
             document.body.setAttribute('data-theme', next);
-            updateThemeColor(next);
+            localStorage.setItem('theme', next);
+            updateThemeColor();
         });
     }
 
-    updateThemeColor(document.body.getAttribute('data-theme'));
+    updateThemeColor();
 
     /* Scroll Reveal – IntersectionObserver */
     if ('IntersectionObserver' in window) {

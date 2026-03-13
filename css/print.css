@@ -267,8 +267,8 @@ padding-top: 3rem; }
     position: relative;
 }
 
-.mag-img-wrap img { transition: transform 0.5s ease; filter: grayscale(100%); }
-.mag-card:hover .mag-img-wrap img { transform: scale(1.05); filter: grayscale(0%); }
+.mag-img-wrap img { transition: transform 0.5s ease, filter 0.5s ease; filter: grayscale(0%); }
+.mag-card:hover .mag-img-wrap img { transform: scale(1.05); filter: grayscale(100%); }
 
 .mag-info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 .mag-info p { font-size: 1rem; color: var(--accent-color5); line-height: 1.2; }
@@ -278,27 +278,39 @@ padding-top: 3rem; }
 .logo-card {
     aspect-ratio: 1 / 1;
     border: 1px solid rgba(128,128,128,0.2);
-    padding: 1.5rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     transition: border-color 0.3s, background 0.3s;
     background: var(--grey-accent);
+    position: relative;
+    overflow: hidden;
 }
 
 .logo-card:hover { border-color: var(--accent-color); background: var(--bg-color); }
 
-.logo-img-wrap { width: 60%; margin-bottom: 1rem; height: auto; }
-.logo-img-wrap img { object-fit: contain; }
+.logo-img-wrap { width: 100%; height: 100%; position: absolute; inset: 0; margin: 0; }
+.logo-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: filter 0.4s ease; filter: grayscale(0%); }
+.logo-card:hover .logo-img-wrap img { filter: grayscale(100%); }
 
+.logo-info {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
 .logo-info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
-.logo-info p { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--accent-color); }
+.logo-info p { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--accent-color5); }
 
 /* Poster Cards */
 .poster-card { position: relative; aspect-ratio: 2 / 3; overflow: hidden; }
-.poster-card img { transition: 0.4s; filter: contrast(1.1); }
+.poster-card img { transition: transform 0.4s ease, filter 0.4s ease; filter: grayscale(0%); }
 
 .poster-overlay {
     position: absolute;
@@ -316,7 +328,7 @@ padding-top: 3rem; }
 }
 
 .poster-card:hover .poster-overlay { opacity: 1; }
-.poster-card:hover img { transform: scale(1.1); }
+.poster-card:hover img { transform: scale(1.1); filter: grayscale(100%); }
 .poster-overlay h3 { color: #fff; font-size: 1.5rem; margin-bottom: 0.5rem; }
 .poster-overlay p { color: var(--accent-color); font-size: 0.9rem; font-weight: bold; }
 
