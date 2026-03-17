@@ -66,7 +66,7 @@
 }
 
 .hero-desc {
-    font-family: 'Archivo', sans-serif;
+   font-family: 'Archivo Black', sans-serif;
     font-weight: 800;
     font-size: clamp(1rem, 2vw, 1.35rem);
     text-transform: uppercase;
@@ -170,11 +170,11 @@ q {
 }
 
 .brand-section h3 {
-     font-family: 'Archivo', sans-serif;
-    font-weight: 400;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 800;
     letter-spacing: -0.02em;
-    line-height: -3rem;
-     text-transform: capitalize;
+
+     text-transform: uppercase;
 }
 
 .corperate-section {
@@ -201,7 +201,7 @@ q {
     white-space: nowrap;
    
 }
-h3{
+.section-desc h3 {
     margin-left: 20px;
 }
 
@@ -234,9 +234,9 @@ white-space: nowrap;
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 6rem;
-    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    width: 50%;
 }
 
 .project-box {
@@ -270,9 +270,14 @@ white-space: nowrap;
 .project-box:hover .thumb-img { transform: scale(1.1); }
 
 .box-title {
-    font-size: 2rem;
+    font-size: clamp(1.1rem, 0.9rem + 1vw, 1.6rem);
     margin-bottom: 0.5rem;
     color: var(--text-color);
+}
+
+#m-title {
+    font-size: clamp(1.4rem, 1rem + 2.5vw, 3rem);
+    margin-bottom: 2rem;
 }
 
 .box-meta {
@@ -335,6 +340,10 @@ white-space: nowrap;
     border: 1px solid var(--glass-border);
 }
 
+[data-theme="light"] .main-slider {
+    background: #ffffff;
+}
+
 .slide-img {
     width: 100%; height: 100%;
     object-fit: contain;
@@ -361,12 +370,12 @@ white-space: nowrap;
 }
 
 .ctrl-btn {
-    background: var(--accent-color);
+    background: var(--accent-color8);
     color: #000;
     padding: 10px 25px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Archivo', sans-serif;
+     font-family: 'Manrope', sans-serif;
     border: none;
     transition: 0.3s;
 }
@@ -421,7 +430,7 @@ white-space: nowrap;
     margin-bottom: 1rem;
     margin-left: 0;
     font-size: 1.2rem;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
 }
 
@@ -434,7 +443,7 @@ white-space: nowrap;
 }
 
 .detail-group h4 {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
