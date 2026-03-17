@@ -216,12 +216,7 @@ white-space: nowrap;
 }
 [data-theme="dark"] .section-desc h2:hover {
     -webkit-text-stroke: 1px var(--accent-color);
-    text-shadow:
-         4px 4px 0 #0f0f0f,
-       -1px -1px 0 #0f0f0f,
-        1px -1px 0 #0f0f0f,
-        -1px 1px 0 #0f0f0f,
-         1px 1px 0 #0f0f0f;
+   
 }
 .section-desc p {
     line-height: 1.7;
