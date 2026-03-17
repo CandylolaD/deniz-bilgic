@@ -419,6 +419,7 @@ white-space: nowrap;
 .detail-group h3 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+    margin-left: 0;
     font-size: 1.2rem;
     font-family: 'Archivo', sans-serif;
     text-transform: uppercase;
