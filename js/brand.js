@@ -1,4 +1,4 @@
- /* Animated Typography – Hero Title Char Split */
+/* Animated Typography – Hero Title Char Split */
     (function initCharAnimation() {
         var solidEl = document.querySelector('.title-solid');
         if (!solidEl) return;
@@ -48,23 +48,23 @@
     /* Projekt-Daten */
     var projects = [
         {
-            title: 'Monochrome Studios',
-            story: 'Ein Streetwear-Label aus Berlin, das auf Minimalismus setzt. Die Herausforderung: Eine Identität zu schaffen, die trotz Reduktion laut ist.',
-            desc: 'Das Design nutzt ausschließlich Schwarz und Weiß. Die Typografie ist der Held. Wir haben ein dynamisches Logo entwickelt, das sich auf verschiedenen Kleidungsstücken anpasst.',
+            title: 'Network Orbit',
+            story: '<p>Das Projekt umfasst die Logoentwicklung, Farbdefinition, Typografiekonzept sowie die Anwendung des Designs auf verschiedene Geschäftsmaterialien.</p><p>Ziel war die Gestaltung eines konsistenten, professionellen und wiedererkennbaren Markenauftritts.</p><h4>Design-Begründung: Corporate Design Logistik</h4><ul><li><strong>Symbolik der Effizienz:</strong> Das Logo wurde so entwickelt, dass es Dynamik und Schnelligkeit vermittelt, um die Kernkompetenzen eines modernen Logistikunternehmens visuell zu transportieren.</li><li><strong>Farbpsychologie:</strong> Die Wahl eines klaren, technischen Farbschemas unterstreicht die Verlässlichkeit und Professionalität, die im Transportwesen essenziell sind.</li><li><strong>Typografie:</strong> Ein robustes Schriftsatzkonzept garantiert maximale Lesbarkeit auf unterschiedlichsten Skalierungen – von der Visitenkarte bis hin zur Fahrzeugbeschriftung.</li><li><strong>Visuelle Konsistenz:</strong> Durch die Definition von Gestaltungsrastern wird ein einheitlicher Auftritt über alle Geschäftsmaterialien hinweg sichergestellt, was das Markenvertrauen stärkt.</li><li><strong>Strukturierte Hierarchie:</strong> Das Design folgt einer funktionalen Logik, die Informationen klar gliedert und so die Effizienz der Kommunikation erhöht.</li></ul><p>Software: Adobe Illustrator, Adobe InDesign, Adobe Photoshop</p>',
+            desc: 'Entwicklung eines vollständigen Corporate Designs für ein fiktives Logistikunternehmen – von der Namensfindung bis zur finalen Gestaltung des Erscheinungsbildes.',
             images: [
-                'https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=80',
-                'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80',
-                'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1200&q=80'
+                'assets/images/branding/corperate/orbit/network_orbit_logo.webp',
+                'assets/images/branding/corperate/orbit/network_orbit_logo.webp','assets/images/branding/corperate/orbit/entwurf_logos.webp','assets/images/branding/corperate/orbit/business_cards_01.webp','assets/images/branding/corperate/orbit/business_card_front.webp','assets/images/branding/corperate/orbit/business_card_02.webp','assets/images/branding/corperate/orbit/briefbogen.webp',
+                'assets/images/branding/corperate/orbit/truck_logo.webp'
             ]
         },
         {
-            title: 'Urban Roast',
-            story: 'Kaffee ist Handwerk. Urban Roast brauchte ein Rebranding, das die rohe Atmosphäre der Rösterei einfängt.',
-            desc: 'Wir kombinierten industrielle Texturen mit warmen Goldtönen. Die Verpackungen erzählen die Geschichte der Herkunftsländer. Das Design ist haptisch durch Prägungen erlebbar.',
+            title: 'Deutscher Tierschutzverbund e.V.',
+            story: '<h4>Warum das Design so gewählt wurde</h4><ul><li><strong>Symbolik Hase:</strong> Der Hase steht für Schutzbedürftigkeit, Nähe zum Menschen und Naturverbundenheit. Als vertrautes Tier schafft er sofort emotionale Identifikation, ohne visuell zu überladen.</li><li><strong>Farbwahl Grün:</strong>Grün transportiert intuitiv Werte wie Natur, Leben und Verantwortung. Der gewählte Ton wirkt ruhig und vertrauenswürdig statt laut oder aktivistisch.</li><li><strong>Präzise Linienführung:</strong>Die einlinige Illustration sorgt für Klarheit, hohe Wiedererkennbarkeit und eine zeitgemäße, zugängliche Ästhetik.</li><li><strong>Visuelle Einfachheit:</strong>Die Reduktion auf das Wesentliche stärkt die Aussage und verhindert visuelle Überforderung – besonders im sensiblen Kontext des Tierschutzes.</li><li><strong>Skalierbarkeit:</strong> Die Reduktion auf das Wesentliche garantiert eine optimale Erkennbarkeit auf allen Medien, von der Visitenkarte bis hin zum digitalen Header.</li></ul><p>Logo Design Software: Adobe Illustrator</p>',
+            desc: 'Deutscher Tierschutzverbund e.V.</p><p>Konzeption und Gestaltung einer persönlichen Markenidentität, die handwerkliche Präzision mit einer modernen, grafischen Formsprache verbindet. Das Logo fungiert als prägnantes, vielseitig einsetzbares Erkennungszeichen im Bereich Tierschutz.',
             images: [
-                'https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1200&q=80',
-                'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1200&q=80',
-                'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80'
+                'assets/images/logos/tierschutz/REBRANDING Vorschau.webp',
+                'assets/images/logos/tierschutz/logo_groß_01.webp','assets/images/logos/tierschutz/sticker.webp','assets/images/logos/tierschutz/tassen_logo.webp','assets/images/logos/tierschutz/tassen_logo.webp','assets/images/logos/tierschutz/keychain_01.webp','assets/images/logos/tierschutz/website_mockup.webp',
+                'assets/images/logos/tierschutz/visitenkarten_01.webp'
             ]
         }
     ];
@@ -80,8 +80,8 @@
         curSlide = 0;
         var p = projects[idx];
         document.getElementById('m-title').textContent = p.title;
-        document.getElementById('m-story').textContent = p.story;
-        document.getElementById('m-desc').textContent  = p.desc;
+        document.getElementById('m-story').innerHTML = p.story;
+        document.getElementById('m-desc').innerHTML  = p.desc;
         updateSlide();
         stripTrack.innerHTML = '';
         var loopImgs = p.images.concat(p.images, p.images);
@@ -186,4 +186,3 @@
 
         requestAnimationFrame(tick);
     }());
-
