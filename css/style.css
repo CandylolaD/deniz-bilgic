@@ -491,7 +491,7 @@ section { padding: 120px 5%; }
     font-weight: 800;
     color: var(--text-color);
     font-size: 1rem;
-    font-size: clamp(1rem, 1.5vw, 1.9rem);
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
 }
 
 .portfolio-grid {
