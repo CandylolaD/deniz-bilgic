@@ -52,13 +52,14 @@
     --text-color5:    #1e6bff;
     --sub-text:       #0e0e0e;
     --accent-color:   #1e6bff;
-    --accent-color2:  #ffe11e;
+    --accent-color2:  #fedc00;
     --accent-color3:  #1e6bff;
-    --accent-color4:  #ffe11e;
+    --accent-color4:  #fedc00;
     --accent-color5:  #031d90;
     --accent-color6:  #1ef0ff;
     --accent-color7:  #1e6bff;
-    --accent-color8:  #6096f9;
+    --accent-color8:  #1e6bff;
+    --accent-color9:  #6096f9;
     --glass-bg:       rgba(255, 255, 255, 0.65);
     --glass-border:   rgba(0, 0, 0, 0.08);
     --glass-blur:     40px;
@@ -74,21 +75,22 @@
     --text-color:     #ffffff;
     --text-color2:    #ffffff;
      --text-color3:    #4d7ef9;
-      --text-color4:    #fddd3c;
+      --text-color4:    #fedc00;
       --text-color5: rgb(5, 9, 44);
     --sub-text:       #e6e4e4;
-    --accent-color:   #fddd3c;
-    --accent-color2:  #fddd3c;
-    --accent-color3:  #fddd3c;
-     --accent-color4:  #fddd3c;
-     --accent-color5:  #fddd3c;
-     --accent-color6:  #fddd3c;
+    --accent-color:   #fedc00;
+    --accent-color2:  #fedc00;
+    --accent-color3:  #fedc00;
+     --accent-color4:  #fedc00;
+     --accent-color5:  #fedc00;
+     --accent-color6:  #fedc00;
      --accent-color7:  #4d7ef9;
-     --accent-color8:  #fddd3c;
+     --accent-color8:  #fedc00;
+     --accent-color9:  #737373;
     --glass-bg:       rgba(20, 20, 20, 0.6);
     --glass-border:   rgba(255, 255, 255, 0.12);
     --nav-bg:         rgba(10, 10, 10, 0.9);
-    --cursor-color:   #fddd3c;
+    --cursor-color:   #fedc00;
     --card-shadow:    0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
@@ -306,7 +308,7 @@ nav#navbar.visible { transform: translateY(0); }
     justify-content: center;
     gap: 0.6rem;
     padding: 1.5rem 1rem;
-    border: 1px solid var(--accent-color);
+    border: 0.2px solid var(--accent-color9);
     background: var(--glass-bg);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -335,7 +337,7 @@ nav#navbar.visible { transform: translateY(0); }
 }
 
 .sub-nav-btn:hover::before { transform: scaleX(1); }
-.sub-nav-btn:hover { border-color: var(--text-color);border: 3px solid var(--accent-color);}
+.sub-nav-btn:hover { border-color: var(--text-color);border: 1px solid var(--accent-color);}
 
 .sub-nav-btn svg {
     width: 24px;
@@ -364,7 +366,7 @@ footer {
     background: #050505;
     color: #fff;
     padding: 40px 5% 40px;
-    border-top: 1px solid var(--accent-color);
+    border-top: 0.5px solid var(--accent-color9);
 }
 
 .footer-grid {
@@ -431,7 +433,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    color: var(--accent-color4);
+    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     flex-wrap: wrap;
