@@ -385,6 +385,24 @@ nav#navbar.visible { transform: translateY(0); }
     flex-shrink: 0;
 }
 
+.sub-nav-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.sub-nav-icon--dark {
+    display: none;
+}
+
+[data-theme="dark"] .sub-nav-icon--light {
+    display: none;
+}
+
+[data-theme="dark"] .sub-nav-icon--dark {
+    display: block;
+}
+
 
 
 /* Glass Card */
