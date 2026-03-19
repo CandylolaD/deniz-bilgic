@@ -413,7 +413,7 @@ section { padding: 120px 5%; }
 .about-img:hover { filter: grayscale(0%); border: 1px solid var(--accent-color3); }
 .about-img:hover img { transform: scale(1.04); }
 
-[data-theme="dark"] .about-img:hover { border: 2px solid rgb(25, 80, 246); }
+[data-theme="dark"] .about-img:hover { border: 2px solid var(--accent-color9); }
 
 /* Portfolio Section */
 #portfolio {

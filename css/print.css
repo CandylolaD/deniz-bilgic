@@ -271,7 +271,7 @@ padding-top: 3rem; }
 .mag-card:hover .mag-img-wrap img { transform: scale(1.05); filter: grayscale(100%); }
 
 .mag-info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
-.mag-info p { font-size: 1rem; color: var(--accent-color5); line-height: 1.2; }
+.mag-info p { font-size: clamp(1rem, 1.2vw, 1.3rem); color: var(--accent-color5); line-height: 1.2; }
 [data-theme="dark"] .mag-info p { color: var(--accent-color5); }
 
 /* Logo Cards */
@@ -306,7 +306,7 @@ padding-top: 3rem; }
     -webkit-backdrop-filter: blur(8px);
 }
 .logo-info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
-.logo-info p { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--accent-color5); }
+.logo-info p { font-size: clamp(1rem, 1.2vw, 1.3rem); font-weight: 600; text-transform: uppercase; color: var(--accent-color5); }
 
 /* Poster Cards */
 .poster-card { position: relative; aspect-ratio: 2 / 3; overflow: hidden; }

@@ -71,13 +71,13 @@ p{
 .title-outline {
     display: block;
     color: transparent;
-    -webkit-text-stroke: 2px var(--accent-color);
+    -webkit-text-stroke: 3px var(--accent-color);
     font-weight: 900;
     white-space: nowrap;
 }
 
 [data-theme="dark"] .title-outline {
-    -webkit-text-stroke: 2px var(--accent-color);
+    -webkit-text-stroke: 3px var(--accent-color);
 }
 
 .hero-divider {
@@ -218,7 +218,7 @@ section:not(#hero) {
     margin-bottom: 1.5rem;
     text-align: left;
     color: transparent;
-    -webkit-text-stroke: 1px var(--accent-color);
+    -webkit-text-stroke: 2px var(--accent-color5);
     paint-order: stroke fill;
 }
 
@@ -233,7 +233,7 @@ section:not(#hero) {
 .typing-dots {
     display: inline-block;
     letter-spacing: 0.05em;
-    color: var(--accent-color);
+    color: var(--accent-color5);
 }
 
 .intro-body {

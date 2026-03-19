@@ -472,7 +472,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    color: var(--text-color);
+    color: whitesmoke;
     text-transform: uppercase;
     letter-spacing: 1px;
     flex-wrap: wrap;
