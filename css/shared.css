@@ -455,7 +455,7 @@ footer {
 .footer-col h4 {
     margin-bottom: 20px;
     color: var(--accent-color7);
-    font-size: clamp(1rem, 1.4vw, 1.6rem);
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     
