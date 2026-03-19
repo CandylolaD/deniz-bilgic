@@ -29,7 +29,7 @@
         }
 
 p{
-    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
 }
 
 /* Hero Section */
@@ -227,7 +227,7 @@ section:not(#hero) {
     margin-bottom: 1rem;
     text-wrap: balance;
     text-align: left;
-    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
 }
 
 .typing-dots {
@@ -237,7 +237,7 @@ section:not(#hero) {
 }
 
 .intro-body {
-    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
     line-height: 1.85;
     color: var(--text-color);
     margin-bottom: 1.75rem;
@@ -437,7 +437,7 @@ section:not(#hero) {
     border: 1px solid var(--glass-border);
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
     transition: border-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -460,7 +460,7 @@ section:not(#hero) {
     border: 1px solid var(--glass-border);
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
+   font-size: clamp(1rem, 1.1vw, 1.2rem);
     text-align: center;
     transition: border-color 0.3s, transform 0.3s;
 }
