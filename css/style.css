@@ -244,10 +244,10 @@ section { padding: 120px 5%; }
 }
 
 .about-card p {
-    font-size: 1.3rem;
     line-height: 1.6;
     color: var(--sub-text);
     margin-bottom: 1.2rem;
+    text-wrap: balance;
 }
 
 .tags {
@@ -491,6 +491,7 @@ section { padding: 120px 5%; }
     font-weight: 800;
     color: var(--text-color);
     font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.9rem);
 }
 
 .portfolio-grid {
@@ -584,7 +585,6 @@ section { padding: 120px 5%; }
 }
 
 .portfolio-desc {
-    font-size: 0.9rem;
     color: var(--sub-text);
     font-weight: 400;
 }

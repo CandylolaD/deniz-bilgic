@@ -29,7 +29,7 @@
         }
 
 p{
-    font-size: 18px;
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
 }
 
 /* Hero Section */
@@ -227,6 +227,7 @@ section:not(#hero) {
     margin-bottom: 1rem;
     text-wrap: balance;
     text-align: left;
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
 }
 
 .typing-dots {
@@ -236,7 +237,7 @@ section:not(#hero) {
 }
 
 .intro-body {
-    font-size: clamp(1rem, 1.4vw, 1.175rem);
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
     line-height: 1.85;
     color: var(--text-color);
     margin-bottom: 1.75rem;
@@ -246,7 +247,7 @@ section:not(#hero) {
 .intro-goal-label {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: clamp(1rem, 1.4vw, 1.175rem);
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
     color: var(--text-color);
     margin-bottom: 0.75rem;
 }
@@ -285,7 +286,7 @@ section:not(#hero) {
 }
 
 .intro-open-text {
-    font-size: clamp(1rem, 1.3vw, 1.1rem);
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
     line-height: 1.8;
     color: var(--text-muted);
     margin-bottom: 1.75rem;
@@ -322,12 +323,13 @@ section:not(#hero) {
 }
 
 .profile-img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 85px;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -399,7 +401,7 @@ section:not(#hero) {
 
 .timeline-desc {
     color: var(--sub-text);
-    font-size: 1rem;
+   font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
 /* Skills Section */
@@ -435,7 +437,7 @@ section:not(#hero) {
     border: 1px solid var(--glass-border);
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
     transition: border-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -458,7 +460,7 @@ section:not(#hero) {
     border: 1px solid var(--glass-border);
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
     text-align: center;
     transition: border-color 0.3s, transform 0.3s;
 }
@@ -528,7 +530,7 @@ section:not(#hero) {
     position: relative;
     padding-left: 1.2rem;
     color: var(--sub-text);
-    font-size: 0.95rem;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
 .list-grid li::before {

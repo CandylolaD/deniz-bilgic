@@ -173,6 +173,10 @@ a {
     color: inherit;
 }
 
+p{
+    font-size: clamp(1rem, 1.5vw, 1.9rem);
+}
+
 ul { list-style: none; }
 
 h1, h2, h3, h4, .hero-font {
@@ -350,7 +354,7 @@ nav#navbar.visible { transform: translateY(0); }
     text-align: center;
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--text-color);
@@ -451,16 +455,16 @@ footer {
 .footer-col h4 {
     margin-bottom: 20px;
     color: var(--accent-color7);
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     
 }
 
-.footer-col ul { line-height: 2.5; }
-.footer-col a { color: white; transition: color 0.3s; font-size: 0.9rem; }
+.footer-col ul { line-height: 2; }
+.footer-col a { color: white; transition: color 0.3s; font-size: clamp(1rem, 1.4vw, 1.7rem); }
 .footer-col a:hover { color: var(--accent-color2); }
-.footer-col p { color: #f0eeee; line-height: 1.8; font-size: 0.9rem; }
+.footer-col p { color: #f0eeee; line-height: 1.8; font-size: clamp(1rem, 1.4vw, 1.7rem); }
 
 .footer-bottom {
     border-top: 1px solid #222;
