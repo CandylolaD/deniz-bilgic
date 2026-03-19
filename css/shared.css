@@ -40,6 +40,39 @@
     font-display: swap;
 }
 
+/* archivo-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/archivo-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/archivo-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/archivo-v25-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* archivo-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/archivo-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
 /* CSS Variables & Themes */
 :root {
@@ -143,9 +176,9 @@ a {
 ul { list-style: none; }
 
 h1, h2, h3, h4, .hero-font {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Archivo', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: -0.02em;
 }
 
@@ -237,10 +270,12 @@ nav#navbar.visible { transform: translateY(0); }
     display: flex;
     gap: 40px;
     align-items: center;
+    
 }
 
 .nav-links a {
     font-weight: 700;
+    font-family: 'Archivo';
     text-transform: uppercase;
     font-size: 0.9rem;
     opacity: 0.9;
@@ -313,7 +348,7 @@ nav#navbar.visible { transform: translateY(0); }
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     text-align: center;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
     text-transform: uppercase;
