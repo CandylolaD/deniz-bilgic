@@ -638,6 +638,18 @@ section { padding: 120px 5%; }
     flex-shrink: 0;
 }
 
+.portfolio-icon-svg--dark {
+    display: none;
+}
+
+[data-theme="dark"] .portfolio-icon-svg--light {
+    display: none;
+}
+
+[data-theme="dark"] .portfolio-icon-svg--dark {
+    display: block;
+}
+
 .portfolio-card:hover .portfolio-icon {
     transform: scale(1.4);
     opacity: 1;
