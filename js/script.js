@@ -1,4 +1,4 @@
-  (function () {
+(function () {
         var section  = document.getElementById('portfolio');
         var blobs    = [
             document.querySelector('.blob--1'),
@@ -51,3 +51,20 @@
         requestAnimationFrame(tick);
     })();
  
+(function () {
+    var fills = document.querySelectorAll('.skill-fill');
+    if (!fills.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var el = entry.target;
+                var w = el.getAttribute('data-width');
+                el.style.width = w + '%';
+                observer.unobserve(el);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    fills.forEach(function (fill) { observer.observe(fill); });
+})();
