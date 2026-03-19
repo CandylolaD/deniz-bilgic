@@ -193,7 +193,7 @@ section { padding: 120px 5%; }
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 1px solid var(--text-color3);
+    border-bottom: 1px solid var(--accent-color9);
     padding-bottom: 20px;
 }
 
@@ -211,7 +211,7 @@ section { padding: 120px 5%; }
     font-family: 'Archivo', sans-serif;
     font-weight: 800;
     font-size: clamp(2.4rem, 5vw, 3.8rem);
-    border-bottom: 1px solid var(--text-color3);
+    border-bottom: 1px solid var(--accent-color9);
     padding-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: -0.03em;
