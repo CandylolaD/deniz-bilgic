@@ -10,7 +10,7 @@
             --bg-secondary: #1a1a1a;
             --text-color: #dee0fd;
             --text-muted: #a0a0a0;
-            --accent-color: #F2C94C; /* Yellow */
+            --accent-color: #ffe11e; /* Yellow */
             --glass-bg: rgba(255, 255, 255, 0.05);
             --glass-border: rgba(255, 255, 255, 0.1);
             --glass-blur: 12px;
@@ -22,7 +22,7 @@
             --bg-secondary: #9e9d9d;
             --text-color: #111111;
             --text-muted: #3f3e3e;
-            --accent-color: #2F80ED; /* Blue */
+            --accent-color: #1e6bff; 
             --glass-bg: rgba(255, 255, 255, 0.6);
             --glass-border: rgba(0, 0, 0, 0.1);
             --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

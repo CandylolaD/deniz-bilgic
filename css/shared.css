@@ -44,12 +44,12 @@
 /* CSS Variables & Themes */
 :root {
     --bg-color:       #ffffff;
-    --bg-color2:     rgb(252, 253, 255);
+    --bg-color2:     rgb(255, 255, 255);
     --text-color:     #0a0a0a;
     --text-color2:    #1e6bff;
     --text-color3:    #1f1f1f;
     --text-color4:    #353535;
-    --text-color5:    rgb(20, 96, 249);
+    --text-color5:    #1e6bff;
     --sub-text:       #0e0e0e;
     --accent-color:   #1e6bff;
     --accent-color2:  #ffe11e;
@@ -73,22 +73,22 @@
      --bg-color2:     rgb(0, 0, 0);
     --text-color:     #ffffff;
     --text-color2:    #ffffff;
-     --text-color3:    #1e6bff;
-      --text-color4:    #FFD700;
+     --text-color3:    #4d7ef9;
+      --text-color4:    #fddd3c;
       --text-color5: rgb(5, 9, 44);
     --sub-text:       #e6e4e4;
-    --accent-color:   #FFD700;
-    --accent-color2:  #FFD700;
-    --accent-color3:  #1e6bff;
-     --accent-color4:  #ffe11e;
-     --accent-color5:  #ffe11e;
-     --accent-color6:  #FFD700;
-     --accent-color7:  #1e6bff;
-     --accent-color8:  #FFD700;
+    --accent-color:   #fddd3c;
+    --accent-color2:  #fddd3c;
+    --accent-color3:  #fddd3c;
+     --accent-color4:  #fddd3c;
+     --accent-color5:  #fddd3c;
+     --accent-color6:  #fddd3c;
+     --accent-color7:  #4d7ef9;
+     --accent-color8:  #fddd3c;
     --glass-bg:       rgba(20, 20, 20, 0.6);
     --glass-border:   rgba(255, 255, 255, 0.12);
     --nav-bg:         rgba(10, 10, 10, 0.9);
-    --cursor-color:   #FFD700;
+    --cursor-color:   #fddd3c;
     --card-shadow:    0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
