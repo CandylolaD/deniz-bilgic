@@ -249,10 +249,10 @@ nav#navbar.visible { transform: translateY(0); }
 }
 
 .logo-img {
-    height: 89px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+   height: 88px;
+width: auto;
+object-fit: contain;
+display: block;
 }
 
 .logo-img--default {
