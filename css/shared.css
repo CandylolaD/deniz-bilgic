@@ -249,7 +249,7 @@ nav#navbar.visible { transform: translateY(0); }
 }
 
 .logo-img {
-    height: 8px;
+    height: 89px;
     width: auto;
     object-fit: contain;
     display: block;
