@@ -603,7 +603,7 @@ section:not(#hero) {
 
 /* Private Leidenschaft */
 #private {
-    background: var(--bg-color2);
+    background: none;
 }
 
 .illus-inner {
