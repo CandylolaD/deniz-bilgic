@@ -1,5 +1,4 @@
 /* Fonts */
-/* Fonts */
 @font-face {
     font-family: 'Archivo Black';
     src: url('/fonts/archivo-black-v23-latin-regular.woff2') format('woff2');
@@ -12,14 +11,6 @@
     font-family: 'Manrope';
     src: url('/fonts/manrope-v20-latin-regular.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('/fonts/manrope-v20-latin-500.woff2') format('woff2');
-    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -40,37 +31,37 @@
     font-display: swap;
 }
 
-/* archivo-regular - latin */
+/* Archivo */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/archivo-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/archivo-v25-latin-regular.woff2') format('woff2');
 }
-/* archivo-700 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/archivo-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/archivo-v25-latin-700.woff2') format('woff2');
 }
-/* archivo-800 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 800;
-  src: url('/fonts/archivo-v25-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/archivo-v25-latin-800.woff2') format('woff2');
 }
-/* archivo-900 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 900;
-  src: url('/fonts/archivo-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/archivo-v25-latin-900.woff2') format('woff2');
 }
 
 
@@ -97,7 +88,7 @@
     --glass-border:   rgba(0, 0, 0, 0.08);
     --glass-blur:     40px;
     --nav-bg:         rgba(255, 255, 255, 0.9);
-    --cursor-color:   #1e6bff;
+    --cursor-color:   #232323;
     --card-shadow:    0 8px 32px rgba(31, 38, 135, 0.1);
     --radius:         2px;
 }
@@ -123,7 +114,7 @@
     --glass-bg:       rgba(20, 20, 20, 0.6);
     --glass-border:   rgba(255, 255, 255, 0.12);
     --nav-bg:         rgba(10, 10, 10, 0.9);
-    --cursor-color:   #fedc00;
+    --cursor-color:   #fafaf8;
     --card-shadow:    0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
@@ -149,9 +140,7 @@ html {
     color: #ffffff;
 }
 
-.cta-container {
-    cursor: url('/assets/images/icons/cursor.png'), pointer;
-}
+
 
 body {
     background-color: var(--bg-color);
@@ -190,23 +179,37 @@ h1, h2, h3, h4, .hero-font {
 
 /* Custom Cursor */
 .cursor {
-    width: 35px;
-    height: 35px;
-    background-color: rgb(247, 244, 244);
+    width: 30px;
+    height: 34px;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, background-color 0.3s;
-    mix-blend-mode: difference;
-    border-radius: 50%;
+    transform: translate(0, 0);
+    transition: transform 0.15s ease, filter 0.3s ease;
+    mix-blend-mode: normal;
 }
 
-.cursor.hovered {
-    width: 70px;
-    height: 70px;
-    background-color: transparent;
-    border: 3px solid var(--cursor-color);
+.cursor svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    
+}
+
+.cursor.hovered svg {
+    transform: scale(1.35);
+    
+}
+
+.cursor-trail {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cursor-color);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 /* Noise Texture Overlay */
@@ -655,7 +658,8 @@ footer {
 
     .nav-links.active { transform: translateX(0); }
 
-    .cursor { display: none; }
+    .cursor,
+    .cursor-trail { display: none; }
     * { cursor: auto; }
 
     .back-to-top { width: 46px; height: 46px; bottom: 80px; right: 20px; }
