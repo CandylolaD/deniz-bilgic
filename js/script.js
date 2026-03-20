@@ -68,3 +68,37 @@
 
     fills.forEach(function (fill) { observer.observe(fill); });
 })();
+
+(function () {
+    var STORAGE_KEY = 'cookie_notice_seen';
+    var banner = document.getElementById('cookie-banner');
+    var acceptBtn = document.getElementById('cookie-accept');
+
+    if (!banner || !acceptBtn) return;
+    if (localStorage.getItem(STORAGE_KEY)) return;
+
+    banner.removeAttribute('hidden');
+
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            banner.classList.add('cookie-visible');
+        });
+    });
+
+    function dismiss() {
+        banner.classList.remove('cookie-visible');
+        banner.classList.add('cookie-hide');
+        localStorage.setItem(STORAGE_KEY, '1');
+        banner.addEventListener('transitionend', function () {
+            banner.setAttribute('hidden', '');
+        }, { once: true });
+    }
+
+    acceptBtn.addEventListener('click', dismiss);
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && banner.classList.contains('cookie-visible')) {
+            dismiss();
+        }
+    });
+})();
